@@ -1,4 +1,4 @@
 // Code your solution in this file
 function findMatching(collection, name){
-  collection.filter(function (person) { return person === name; });
+  return collection.filter(function (person) { return person === name; });
 }
