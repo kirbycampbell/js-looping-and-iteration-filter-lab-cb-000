@@ -18,6 +18,6 @@ function fuzzyMatch(collection, arg){
 
 function matchName(collection, arg){
   return collection.filter(function (item) {
-    return item === arg;
+    console.log(item === arg);
   });
 }
