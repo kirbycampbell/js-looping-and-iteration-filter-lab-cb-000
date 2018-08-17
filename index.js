@@ -5,8 +5,12 @@ function findMatching(collection, arg){
   });
 }
 
+function firstLetters(string){
+  return string.substring(0,2);
+}
+
 function fuzzyMatch(collection, arg){
   return collection.filter(function (item) {
-    return item.substring(0,2) === arg.substring(0,2);
+    return firstLetters(item) === firstLetters(arg);
   });
 }
