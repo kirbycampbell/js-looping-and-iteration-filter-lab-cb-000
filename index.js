@@ -15,3 +15,9 @@ function fuzzyMatch(collection, arg){
     return firstLetters(item) === firstLetters(arg);
   });
 }
+
+function matchName(collection, arg){
+  return collection.filter(function (item) {
+    return item === arg;
+  });
+}
