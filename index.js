@@ -5,6 +5,7 @@ function findMatching(collection, arg){
   });
 }
 
+// My own seperation of concerns for fuzzymatch substring action
 function firstLetters(string){
   return string.substring(0,2);
 }
