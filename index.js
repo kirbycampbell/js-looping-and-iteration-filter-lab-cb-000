@@ -18,6 +18,6 @@ function fuzzyMatch(collection, arg){
 
 function matchName(collection, arg){
   return collection.filter(function (item) {
-    console.log(item === arg);
+    return item.name.toUpperCase() === arg.toUpperCase();
   });
 }
